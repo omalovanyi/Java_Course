@@ -5,7 +5,7 @@ public class TestTax {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Tax t = new Tax(500000,"NJ",3);
+		Tax t = new Tax(600000,"NJ",3);
 		
 		//t.grossIncome=60000;
 		//t.dependents=2;
@@ -21,7 +21,7 @@ public class TestTax {
 		//System.out.println("Your Credit is " + credit);
 		
 		
-		NJTax t1 = new NJTax(500000,"NJ",3);
+		//NJTax t1 = new NJTax();
 		
 		//t1.grossIncome=60000;
 		//t1.dependents=2;

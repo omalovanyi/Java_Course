@@ -6,15 +6,6 @@ public class Tax {
 	String state;
 	int dependents;
 	
-	  Tax(double gi, String st, int depen) 
-	  
-	  {
-		 grossIncome = gi; // class variable initialization
-		 state = st;
-		 dependents=depen;
-		
-	}
-	
 	public double calcTax()
 	{
 		
@@ -29,27 +20,18 @@ public class Tax {
 		}
 	}
 	
-	public int calcLoan (int amount,int number, String state) 
+	public int calcLoan (int amount, String state) 
 	
 	{
 		int fin=0;
 		if (state=="NJ") 
 		{
-			fin=(amount*2+amount)*number;
+			fin=amount*2+amount;
 		}
 		
 		return fin;
 		
 	}
-
-public int calcLoan (int amount,int number) 
 	
-	{
-	   
-	
-	return calcLoan(amount,number,"NJ");
-      	
-	   
-	}
 	
 }
