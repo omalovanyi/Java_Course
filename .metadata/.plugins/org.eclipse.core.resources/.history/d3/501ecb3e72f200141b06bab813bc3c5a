@@ -16,9 +16,9 @@ public class Tax {
 	System.out.println("Preparing the tax data for customer #" + customerCounter);
 	}
 
-	static int calcTax() {
+	int calcTax() {
 	    
-		return ( customerCounter*100);
+		return ( dependents*100);
 	
 	}
 	

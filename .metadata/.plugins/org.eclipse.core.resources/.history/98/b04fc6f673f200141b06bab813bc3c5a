@@ -14,7 +14,7 @@ public class calcTax {
 		Tax.customerCounter=8;
 		int summa = Tax.calcTax();
 		
-		//Tax t1= new Tax(65000,"TX",4);
+		Tax t1= new Tax(65000,"TX",4);
 		
 		System.out.println("for customer1 =" +summa);
 	}
