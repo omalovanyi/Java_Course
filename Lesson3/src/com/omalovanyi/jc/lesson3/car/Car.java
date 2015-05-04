@@ -11,7 +11,7 @@ public class Car {
    
   void stopEngine() {
 	  
-	  int tempCounter=0;
+	//  int tempCounter=0;
 	 
 	  // TBD
   }

@@ -21,7 +21,7 @@ public class TestTax {
 		//System.out.println("Your Credit is " + credit);
 		
 		
-		NJTax t1 = new NJTax(500000,"NJ",3);
+	//	NJTax t1 = new NJTax(500000,"NJ",3);
 		
 		//t1.grossIncome=60000;
 		//t1.dependents=2;
