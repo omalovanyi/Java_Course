@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.omalovanyi.jc.lesson4.calcTax"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="7000 NJ 2"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lesson4"/>
 </launchConfiguration>

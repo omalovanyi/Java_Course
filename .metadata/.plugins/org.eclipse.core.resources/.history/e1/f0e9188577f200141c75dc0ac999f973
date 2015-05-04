@@ -1,0 +1,28 @@
+package com.omalovanyi.jc.lesson5;
+
+public class WhileLoopDemo {
+	
+	
+	public static void main(String[] args) {  
+	
+	String [] friends = new String[20];
+	
+	//String friends2 [][] = new String [20][2];
+	
+	friends[0] = "Masha"; //Initializing the first element
+	friends[1] = "Matilda"; //Initializing the second element
+	friends[2] = "Rosa";
+
+	friends[19] = "Natasha"; 
+	
+	int n=friends.length;
+	int i;
+	
+	for (i=0; i<=n;i++)
+	{
+		System.out.println(i);
+	}	
+	
+	
+	}
+}
