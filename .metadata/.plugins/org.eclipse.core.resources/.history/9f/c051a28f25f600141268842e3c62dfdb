@@ -1,0 +1,26 @@
+package com.omalovanyi.jc.Lesson8_1;
+
+import javax.swing.*;
+
+import java.awt.*;
+
+
+
+public class FlowLayout  {
+
+	public static void main(String[] args) 
+	{
+		
+		// Create a panel
+		JPanel windowContent= new JPanel();
+		
+		// Set a layout manager for this panel
+		FlowLayout fl = new FlowLayout();
+		windowContent.setLayout(fl);
+		
+		
+		
+	}
+	
+	
+}

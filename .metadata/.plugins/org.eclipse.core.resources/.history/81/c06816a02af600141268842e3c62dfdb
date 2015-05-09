@@ -1,0 +1,24 @@
+package com.omalovanyi.jc.Lesson8_1;
+
+public class Calculator_Combining {
+
+	// Declare all calculator’s components.
+	JPanel windowContent;
+	JTextField displayField;
+	JButton button0;
+	JButton button1;
+	JButton button2;
+	JButton button3;
+	JButton button4;
+	JButton button5;
+	JButton button6;
+	JButton button7;
+	JButton button8;
+	JButton button9;
+	JButton buttonPoint;
+	JButton buttonEqual;
+	JPanel p1;
+	
+	
+	
+}
