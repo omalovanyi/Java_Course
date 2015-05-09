@@ -1,12 +1,14 @@
 package com.practicaljava.lesson6;
 
+//import com.omalovanyi.jc.lesson7.Person;
+
 public class TestPayIncrease {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		
-		Person workers[] = new Person[3];
+		Payable workers[] = new Payable[3];
 		workers[0] = new Employee("John");
 		workers[1] = new Contractor("Mary");
 		workers[2] = new Employee("Steve");
@@ -14,7 +16,9 @@ public class TestPayIncrease {
 		Employee currentEmployee;
 		Contractor currentContractor;
 		
-		for (Person p: workers){
+		/*for (Person p: workers)
+		
+		{
 			
 		if (p instanceof Employee)
 		{
@@ -26,7 +30,15 @@ public class TestPayIncrease {
 		   currentContractor = (Contractor) p;
 		   currentContractor.increasePay(30);
 		}
-		}
+		}*/
+		
+		for (Payable p: workers){
+			p.increasePay(30);
+			
+			}
+		
+		
+		
 		
 	}
 
