@@ -1,0 +1,171 @@
+package com.omalovanyi.jc.Lesson9;
+
+import javax.swing.*;
+import java.awt.FlowLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+public class Calculator {
+
+ // Declare all calculator’s components.
+	JPanel windowContent;
+	JFrame frame;
+	GridBagConstraints constr;
+	
+	JTextField displayField;
+	JButton button0;
+	JButton button1;
+	JButton button2;
+	JButton button3;
+	JButton button4;
+	JButton button5;
+	JButton button6;
+	JButton button7;
+	JButton button8;
+	JButton button9;
+	JButton buttonPoint;
+	JButton buttonEqual;
+	JButton buttonPlus;
+	JButton buttonMinus;
+	JButton buttonMultiplication;
+	JButton buttonDivision;
+	
+	
+	//Constructor
+	Calculator()
+	{
+	
+	  //Create a panel
+	   windowContent= new JPanel();
+	 
+	 //Set a layout manager for this panel
+	  GridBagLayout gbl = new GridBagLayout();
+	  windowContent.setLayout(gbl);
+	  constr = new GridBagConstraints();
+	 
+	  this.setConstr(0, 0, 6, 1, 1.0, 1.0, 1, 1);
+	 
+	//setting constraints for the Calculator’s displayField:
+	// x coordinate in the grid
+	//constr.gridx=0;
+	// y coordinate in the grid
+	//constr.gridy=0;
+	
+	// this cell has the same height as other cells
+	//constr.gridheight =1;
+	// this cell is as wide as 6 other ones
+	//constr.gridwidth= 6;
+    
+	// fill all space in the cell
+	//constr.fill= constr.BOTH;
+	// proportion of horizontal space taken by this
+	// component
+	//constr.weightx = 1.0;
+	
+	// proportion of vertical space taken by this component
+	//constr.weighty = 1.0;
+	// position of the component within the cell
+	//constr.anchor=constr.CENTER;
+	 
+	displayField = new JTextField(10);
+	 
+	gbl.setConstraints(displayField,constr);
+   
+	// add the text field to the window
+	windowContent.add(displayField);
+	 
+	 
+	
+	
+	////////////
+	
+	
+	
+	
+	//GridBagConstraints constr1 = new GridBagConstraints();
+	//setting constraints for the Calculator’s displayField:
+		// x coordinate in the grid
+		//constr.gridx=1;
+		// y coordinate in the grid
+		//constr.gridy=1;
+		
+		// this cell has the same height as other cells
+		//constr.gridheight =1;
+		// this cell is as wide as 6 other ones
+		//constr.gridwidth= 1;
+	    
+		// fill all space in the cell
+		//constr.fill= constr.BOTH;
+		// proportion of horizontal space taken by this
+		// component
+		//constr.weightx = 1.0;
+		
+		// proportion of vertical space taken by this component
+		//constr.weighty = 5.0;
+		// position of the component within the cell
+		//constr.anchor=constr.NORTH;
+		 
+		//button0 = new JButton();
+		 
+		//gbl.setConstraints(button0,constr);
+	   
+		// add the text field to the window
+		//windowContent.add(button0);
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	// Create the frame and add the panel to it
+	 frame = new JFrame("Calculator");
+	
+	// Add the panel to the top-level container
+    frame.setContentPane(windowContent);
+			
+			// set the size and make the window visible
+	frame.setSize(400,100);
+	frame.setVisible(true);
+	
+	}
+	
+ 
+public void setConstr(int x, int y, int width, int height, double wx, double wy, int anc, int f)
+{
+  
+	 //setting constraints for the Calculator’s displayField:
+		// x coordinate in the grid
+		constr.gridx=x;
+		// y coordinate in the grid
+		constr.gridy=y;
+		
+		// this cell has the same height as other cells
+		constr.gridheight =height;
+		// this cell is as wide as 6 other ones
+		constr.gridwidth= width;
+	    
+		// fill all space in the cell
+		constr.fill= constr.BOTH;
+		// proportion of horizontal space taken by this
+		// component
+		constr.weightx =wx;
+		
+		// proportion of vertical space taken by this component
+		constr.weighty = wy;
+		// position of the component within the cell
+		constr.anchor=anc;
+}
+	
+	
+	public static void main(String[] args) 	
+	{
+	   Calculator myCalc = new Calculator();
+	   
+	   
+	   
+	}
+	
+}

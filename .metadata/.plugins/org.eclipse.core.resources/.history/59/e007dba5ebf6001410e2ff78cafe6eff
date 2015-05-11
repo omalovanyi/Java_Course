@@ -1,0 +1,14 @@
+package com.omalovanyi.jc.Lesson9;
+import javax.swing.*;
+import java.awt.GridBagLayout;
+
+public class Calculator {
+
+ // Declare all calculator’s components.
+	JPanel windowContent;
+	
+	
+	
+	
+	
+}

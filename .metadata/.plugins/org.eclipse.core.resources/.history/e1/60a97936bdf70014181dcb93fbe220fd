@@ -1,0 +1,105 @@
+package com.omalovanyi.jc.Lesson9;
+
+import javax.swing.*;
+
+import com.omalovanyi.jc.Lesson8_1.HelloWorld;
+
+import java.awt.FlowLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+public class Calculator {
+
+ // Declare all calculator’s components.
+	JPanel windowContent;
+	
+	JTextField displayField;
+	JButton button0;
+	JButton button1;
+	JButton button2;
+	JButton button3;
+	JButton button4;
+	JButton button5;
+	JButton button6;
+	JButton button7;
+	JButton button8;
+	JButton button9;
+	
+	JButton buttonPoint;
+	JButton buttonEqual;
+	JButton buttonPlus;
+	JButton buttonMinus;
+	JButton buttonMultiplication;
+	JButton buttonDivision;
+	
+	
+	// Constructor
+	Calculator()
+	{
+	
+	// Create a panel
+	 windowContent= new JPanel();
+	 
+	// Set a layout manager for this panel
+	 //GridBagLayout gbl = new GridBagLayout();
+	 FlowLayout fl = new FlowLayout();
+		
+	 windowContent.setLayout(fl);
+	 //windowContent.setLayout(gbl);
+	 
+	// Create an instance of the GridBagConstraints
+	// You’ll have to repeat these lines for each component
+	// that you’d like to add to the grid cell
+	 //GridBagConstraints constr = new GridBagConstraints();
+	 
+	//setting constraints for the Calculator’s displayField:
+	// x coordinate in the grid
+	//constr.gridx=0;
+	// y coordinate in the grid
+	//constr.gridy=0;
+	
+	// this cell has the same height as other cells
+	//constr.gridheight =1;
+	// this cell is as wide as 6 other ones
+	//constr.gridwidth= 6;
+    
+	// fill all space in the cell
+	//constr.fill= GridBagConstraints.BOTH;
+	// proportion of horizontal space taken by this
+	// component
+	//constr.weightx = 1.0;
+	
+	// proportion of vertical space taken by this component
+	//constr.weighty = 1.0;
+	// position of the component within the cell
+	//constr.anchor=GridBagConstraints.CENTER;
+	 
+	 displayField = new JTextField(10);
+	 
+	//gbl.setConstraints(displayField,constr);
+   
+	// add the text field to the window
+	windowContent.add(displayField);
+	 
+	 
+	// Create the frame and add the panel to it
+	JFrame frame = new JFrame("Calculator");
+	
+	// Add the panel to the top-level container
+    frame.setContentPane(windowContent);
+			
+			// set the size and make the window visible
+	frame.setSize(400,100);
+	frame.setVisible(true);
+	
+	}
+	
+	public static void main(String[] args) 
+	
+	{
+		
+	   Calculator myHello = new Calculator();
+	
+	}
+	
+}

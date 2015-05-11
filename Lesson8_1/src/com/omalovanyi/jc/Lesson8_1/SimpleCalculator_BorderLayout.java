@@ -17,6 +17,8 @@ public class SimpleCalculator_BorderLayout {
 	
 		windowContent.setLayout(bl);
 		
+		
+		
 		// Create controls in memory
 		JLabel label1 = new JLabel("Number 1:");
 		JTextField field1 = new JTextField(10);
