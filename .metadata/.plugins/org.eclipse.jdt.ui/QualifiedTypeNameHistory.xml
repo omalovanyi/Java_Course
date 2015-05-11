@@ -6,4 +6,6 @@
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="java.util.EventListener"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.awt.Window"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
 </qualifiedTypeNameHistroy>
