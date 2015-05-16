@@ -202,9 +202,18 @@ public static void main(String[] args)
 	   myCalc.button4.addActionListener(calcEngine);
 	   myCalc.button5.addActionListener(calcEngine);
 	   
-	   MyWindowEventProcessor mw = new MyWindowEventProcessor();
+	 //  MyWindowEventProcessor mw = new MyWindowEventProcessor();
 	  // myCalc.frame.addWindowListener(mw); 
-	   myCalc.frame.addWindowListener((WindowListener) mw);
+	  // myCalc.frame.addWindowListener((WindowListener) mw);
+	   
+	   myCalc.frame.addWindowListener(
+			   new WindowAdapter() {
+			   public void windowClosing(WindowEvent e) {
+			   System.exit(0);
+			       }
+			     }
+			     );
+	   
 	}
 	
 }
