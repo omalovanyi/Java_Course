@@ -2,6 +2,8 @@ package com.omalovanyi.jc.Lesson9;
 
 import javax.swing.JApplet;
 import java.awt.Graphics;
+
+
 public class HelloWorld extends JApplet
 {
 

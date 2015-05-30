@@ -1,11 +1,11 @@
 package com.omalovanyi.jc.Lesson9;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+//import java.awt.event.WindowListener;
 
 import javax.swing.*;
 
-import java.awt.FlowLayout;
+//import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 
@@ -217,7 +217,7 @@ public static void main(String[] args)
 	   myCalc.buttonMultiplication.addActionListener(calcEngine);
 	   myCalc.buttonDivision.addActionListener(calcEngine);
 	   
-	   
+	   myCalc.buttonClean.addActionListener(calcEngine);
 	   
 	   // myCalc.button5.addActionListener(calcEngine);
 	 //  MyWindowEventProcessor mw = new MyWindowEventProcessor();
