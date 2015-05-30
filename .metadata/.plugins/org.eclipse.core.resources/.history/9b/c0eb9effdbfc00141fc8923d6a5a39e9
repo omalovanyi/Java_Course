@@ -1,0 +1,74 @@
+package com.omalovanyi.jc.Lesson9;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import javax.swing.*;
+
+public class CalculatorEngine implements ActionListener {
+
+	Calculator parent; // a reference to the Calculator
+	
+	CalculatorEngine(Calculator parent){
+		this.parent = parent;
+		}
+	
+	/*public void actionPerformed(ActionEvent e){
+		JOptionPane.showConfirmDialog(null,
+		"Something happened...",
+		"Just a test",
+		JOptionPane.PLAIN_MESSAGE);
+		}*/
+	
+	/*public void actionPerformed(ActionEvent e){
+		// Get the source of this action
+		JButton clickedButton=(JButton) e.getSource();
+		// Get the button’s label
+		String clickedButtonLabel =
+		clickedButton.getText();
+		// Concatenate the button’s label
+		// to the text of the message box
+		JOptionPane.showConfirmDialog(null,
+		"You pressed " + clickedButtonLabel,
+		"Just a test",
+		JOptionPane.PLAIN_MESSAGE);
+		}*/
+	/*public void actionPerformed(ActionEvent e){
+		// Get the source of this action
+		JButton clickedButton = (JButton) e.getSource();
+		// Get the existing text from the Calculator’s
+		// display field. Reaching inside another object is bad.
+		String dispFieldText = parent.displayField.getText();
+		// Get the button’s label
+		String clickedButtonLabel = clickedButton.getText();
+		parent.displayField.setText(dispFieldText +
+		clickedButtonLabel);
+		}*/
+	
+	public void actionPerformed(ActionEvent e){
+		// Get the source of this action
+		
+		Object src = e.getSource();
+		
+		//JButton clickedButton = (JButton) e.getSource();
+		
+		if (src.equals(e) == "buttonPlus"){
+			
+			JOptionPane.showConfirmDialog(null,
+					"Something happened...",
+					"Just a test",
+					JOptionPane.PLAIN_MESSAGE);
+			// Get the existing text from the Calculator’s
+			// display field. Reaching inside another object is bad.
+			//String dispFieldText = parent.getDisplayValue();
+			// Get the button’s label
+			//String clickedButtonLabel = clickedButton.getText();
+			//parent.setDisplayValue(dispFieldText +
+			//clickedButtonLabel);	
+		}
+		
+		
+		}
+	
+
+}

@@ -33,6 +33,7 @@ public class Calculator {
 	JButton buttonMinus;
 	JButton buttonMultiplication;
 	JButton buttonDivision;
+	JButton buttonClean;
 	
 	
 	//Constructor
@@ -111,10 +112,10 @@ public class Calculator {
 	   gbl.setConstraints(buttonPoint,constr);
 	   windowContent.add(buttonPoint);
 	   
-	   buttonEqual = new JButton("="); 
+	   buttonClean = new JButton("C");  
 	   this.setConstr(3, 4, 1, 1, 1.0, 1.0,constr.CENTER,constr.BOTH);
-	   gbl.setConstraints(buttonEqual,constr);
-	   windowContent.add(buttonEqual);
+	   gbl.setConstraints(buttonClean,constr);
+	   windowContent.add(buttonClean);
 	   
 	   
 	   buttonPlus = new JButton("+"); 
@@ -137,8 +138,12 @@ public class Calculator {
 	   gbl.setConstraints(buttonDivision,constr);
 	   windowContent.add(buttonDivision);
 		
-	 
 	   
+	   buttonEqual = new JButton("=");
+	   this.setConstr(1, 5, 6, 1, 1.0, 1.0,constr.EAST,constr.BOTH);
+	   
+	   gbl.setConstraints(buttonEqual,constr);
+	   windowContent.add(buttonEqual);
 	   
 	   // Create the frame and add the panel to it
 		 frame = new JFrame("Calculator");
@@ -201,7 +206,20 @@ public static void main(String[] args)
 	   myCalc.button3.addActionListener(calcEngine);
 	   myCalc.button4.addActionListener(calcEngine);
 	   myCalc.button5.addActionListener(calcEngine);
+	   myCalc.button6.addActionListener(calcEngine);
+	   myCalc.button7.addActionListener(calcEngine);
+	   myCalc.button8.addActionListener(calcEngine);
+	   myCalc.button9.addActionListener(calcEngine);
+	   myCalc.buttonPoint.addActionListener(calcEngine);
+	   myCalc.buttonEqual.addActionListener(calcEngine);
+	   myCalc.buttonPlus.addActionListener(calcEngine);
+	   myCalc.buttonMinus.addActionListener(calcEngine);
+	   myCalc.buttonMultiplication.addActionListener(calcEngine);
+	   myCalc.buttonDivision.addActionListener(calcEngine);
 	   
+	   
+	   
+	   // myCalc.button5.addActionListener(calcEngine);
 	 //  MyWindowEventProcessor mw = new MyWindowEventProcessor();
 	  // myCalc.frame.addWindowListener(mw); 
 	  // myCalc.frame.addWindowListener((WindowListener) mw);
