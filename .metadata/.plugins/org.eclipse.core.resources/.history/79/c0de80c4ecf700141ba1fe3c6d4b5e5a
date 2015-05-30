@@ -1,7 +1,0 @@
-package com.omalovanyi.jc.Lesson9;
-
-import java.util.EventListener;
-
-public interface ActionListener extends EventListener {
-
-}
