@@ -1,0 +1,26 @@
+package Lesson13.video;
+
+
+public class TestStackTrace2 {
+	  
+	TestStackTrace2()
+	{
+		try{ 
+		divideByZero();
+		} catch (ArithmeticException f){
+			f.printStackTrace();
+		}
+		}
+	
+	
+	int divideByZero(){
+		return 25/0;
+	}
+	
+	public static void main (String[] args){
+		
+		new TestStackTrace();
+		
+	}
+	
+}

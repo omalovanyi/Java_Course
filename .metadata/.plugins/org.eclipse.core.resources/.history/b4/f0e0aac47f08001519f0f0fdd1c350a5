@@ -1,0 +1,13 @@
+package Task_1A;
+
+public class Task3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+           
+		String str ="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+		System.out.print(str);
+		
+	}
+
+}
